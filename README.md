@@ -1,0 +1,2 @@
+# StrajkTests-exam
+# StrajkTests-exam
