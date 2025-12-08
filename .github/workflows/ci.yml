@@ -16,7 +16,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: Strajk-bowling
+        working-directory: strajk-bowling
         
     steps:
       - name: Checkout repository
