@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1764941944048" clover="3.2.0">
+  <project timestamp="1764941944048" name="All files">
+    <metrics statements="16" coveredstatements="15" conditionals="10" coveredconditionals="10" methods="11" coveredmethods="10" elements="37" coveredelements="35" complexity="0" loc="16" ncloc="16" packages="6" files="11" classes="11"/>
+    <package name="assets">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="navicon.svg" path="/Users/jesperpersson/Documents/testinduvidual/individuell-examination/strajk-bowling/src/assets/navicon.svg">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.BookingInfo">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="BookingInfo.jsx" path="/Users/jesperpersson/Documents/testinduvidual/individuell-examination/strajk-bowling/src/components/BookingInfo/BookingInfo.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+      <file name="BookingInfo.scss" path="/Users/jesperpersson/Documents/testinduvidual/individuell-examination/strajk-bowling/src/components/BookingInfo/BookingInfo.scss">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.ErrorMessage">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="ErrorMessage.jsx" path="/Users/jesperpersson/Documents/testinduvidual/individuell-examination/strajk-bowling/src/components/ErrorMessage/ErrorMessage.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+      <file name="ErrorMessage.scss" path="/Users/jesperpersson/Documents/testinduvidual/individuell-examination/strajk-bowling/src/components/ErrorMessage/ErrorMessage.scss">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.Input">
+      <metrics statements="1" coveredstatements="1" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="Input.jsx" path="/Users/jesperpersson/Documents/testinduvidual/individuell-examination/strajk-bowling/src/components/Input/Input.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="13" count="7" type="stmt"/>
+      </file>
+      <file name="Input.scss" path="/Users/jesperpersson/Documents/testinduvidual/individuell-examination/strajk-bowling/src/components/Input/Input.scss">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.Navigation">
+      <metrics statements="6" coveredstatements="5" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="3"/>
+      <file name="Navigation.jsx" path="/Users/jesperpersson/Documents/testinduvidual/individuell-examination/strajk-bowling/src/components/Navigation/Navigation.jsx">
+        <metrics statements="6" coveredstatements="5" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="3"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+      <file name="Navigation.scss" path="/Users/jesperpersson/Documents/testinduvidual/individuell-examination/strajk-bowling/src/components/Navigation/Navigation.scss">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.Shoes">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <file name="Shoes.jsx" path="/Users/jesperpersson/Documents/testinduvidual/individuell-examination/strajk-bowling/src/components/Shoes/Shoes.jsx">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+      </file>
+      <file name="Shoes.scss" path="/Users/jesperpersson/Documents/testinduvidual/individuell-examination/strajk-bowling/src/components/Shoes/Shoes.scss">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+  </project>
+</coverage>
