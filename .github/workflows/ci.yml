@@ -12,11 +12,7 @@ jobs:
   test:
     name: Run Unit Tests
     runs-on: ubuntu-latest
-    
 
-    defaults:
-      run:
-        working-directory: strajk-bowling
         
     steps:
       - name: Checkout repository
