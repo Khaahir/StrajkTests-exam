@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for components/BookingInfo/BookingInfo.jsx</title>
+    <title>Code coverage report for views/Confirmation.scss</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../prettify.css" />
-    <link rel="stylesheet" href="../../base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../../sort-arrow-sprite.png);
+            background-image: url(../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">components/BookingInfo</a> BookingInfo.jsx</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">views</a> Confirmation.scss</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
                 <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -109,14 +109,7 @@
 <a name='L44'></a><a href='#L44'>44</a>
 <a name='L45'></a><a href='#L45'>45</a>
 <a name='L46'></a><a href='#L46'>46</a>
-<a name='L47'></a><a href='#L47'>47</a>
-<a name='L48'></a><a href='#L48'>48</a>
-<a name='L49'></a><a href='#L49'>49</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<a name='L47'></a><a href='#L47'>47</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -159,71 +152,72 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import "./BookingInfo.scss";
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">@import '../scss/variables';
 &nbsp;
-import Input from "../Input/Input";
+.confirmation {
+    display: flex;
+    flex-direction: column;
 &nbsp;
-function BookingInfo({ updateBookingDetails }) {
-  return (
-    &lt;section className="booking-info"&gt;
-      &lt;header&gt;
-        &lt;h2 className="booking-info__heading"&gt;When, WHAT &amp; Who&lt;/h2&gt;
-      &lt;/header&gt;
-      &lt;form className="booking-info__details"&gt;
-        &lt;section className="booking-info__when"&gt;
-          &lt;Input
-            label="Date"
-            type="date"
-            customClass="booking-info__date"
-            name="when"
-            handleChange={updateBookingDetails}
-          /&gt;
-          &lt;Input
-            label="Time"
-            type="time"
-            name="time"
-            handleChange={updateBookingDetails}
-          /&gt;
-        &lt;/section&gt;
-        &lt;Input
-          label="Number of awesome bowlers"
-          type="number"
-          customClass="booking-info__who"
-          name="people"
-          handleChange={updateBookingDetails}
-          maxLength={2}
-        /&gt;
-        &lt;Input
-          label="Number of lanes"
-          type="number"
-          customClass="booking-info__lanes"
-          name="lanes"
-          handleChange={updateBookingDetails}
-          maxLength={2}
-        /&gt;
-      &lt;/form&gt;
-    &lt;/section&gt;
-  );
-}
+    &amp;__details {
+        display: flex;
+        flex-direction: column;
+    }
 &nbsp;
-export default BookingInfo;
-&nbsp;</pre></td></tr></table></pre>
+    &amp;__input {
+        margin-bottom: 1rem;
+    }
+&nbsp;
+    &amp;__price {
+        border: 1px solid $primary-red;
+        border-radius: $border-radius;
+        padding: 0 0.75rem;
+        display: flex;
+        color: #EC315A;
+        margin-top: 4rem;
+&nbsp;
+        p {
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 0.03em;
+        }
+&nbsp;
+        p:first-child {
+            font-weight: bold;
+            margin-right: auto;
+        }
+    }
+&nbsp;
+    &amp;__button {
+        margin: 1rem 0 2rem 0;
+    }
+&nbsp;
+    &amp;__no-booking {
+        font-family: 'Bebas Neue';
+        align-self: center;
+    }
+}</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-12-05T13:39:04.040Z
+                at 2025-12-09T15:46:27.543Z
             </div>
-        <script src="../../prettify.js"></script>
+        <script src="../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="../../sorter.js"></script>
-        <script src="../../block-navigation.js"></script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
     </body>
 </html>
     
