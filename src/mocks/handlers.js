@@ -20,7 +20,7 @@ const mockSuccessConfirmation = {
 export const handlers = [
   // Fånga upp POST-anropet
   http.post(API_URL, async ({ request }) => {
-    // Validera API Key (Bra att göra i testet, även om det inte är ett krav)
+    // Validera API Key Bra att göra i testet, även om det inte är ett krav
     if (request.headers.get('x-api-key') !== API_KEY) {
         return HttpResponse.json({ 
             error: 'Obehörig - Ogiltig API-nyckel.' 

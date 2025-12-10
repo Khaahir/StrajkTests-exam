@@ -43,7 +43,7 @@ describe('Confirmation Component', () => {
   };
 
   it('should display confirmation details from location state', () => {
-    // Scenario 1: Allt gick bra, vi kommer direkt från bokningen.
+    // Allt gick bra, vi kommer direkt från bokningen.
     // Då ska datan ligga i location.state.
     render(
       <MemoryRouter
@@ -72,7 +72,7 @@ describe('Confirmation Component', () => {
   });
 
   it('should display confirmation details from sessionStorage if state is missing', () => {
-    // Scenario 2: Användaren refreshade sidan typ.
+    // Användaren refreshade sidan typ.
     // State är tomt, men vi hoppas att infon sparades i sessionStorage.
     sessionStorage.setItem('confirmation', JSON.stringify(mockData));
 
@@ -95,7 +95,7 @@ describe('Confirmation Component', () => {
   });
 
   it('should display "Inga bokning gjord" if no data exists', () => {
-    // Scenario 3: Ingen data alls. Nån försökte kanske gå direkt till URL:en.
+    //  Ingen data alls. Nån försökte kanske gå direkt till URL:en.
     // Inget i state, inget i storage.
     render(
       <MemoryRouter

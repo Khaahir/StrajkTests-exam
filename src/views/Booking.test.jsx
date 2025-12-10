@@ -3,10 +3,10 @@ import { MemoryRouter } from 'react-router-dom';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import Booking from './Booking'; 
 
-// --- MOCKAR ---
+
 
 // Vi måste veta om användaren skickas vidare till bekräftelsesidan.
-// Så jag mockar useNavigate och sparar en spion-funktion (mockedNavigate)
+// Så jag mockar useNavigate och sparar en spion-funktion mockedNavigate
 // så jag kan kolla "har den här körts?" senare.
 const mockedNavigate = vi.fn();
 vi.mock('react-router-dom', async (importOriginal) => {
@@ -18,7 +18,7 @@ vi.mock('react-router-dom', async (importOriginal) => {
 });
 
 // Här gör jag en "fuska komponent" för BookingInfo. 
-// Varför? Jo, för jag vill inte testa att inputs funkar (det är BookingInfo's ansvar),
+// för jag vill inte testa att inputs funkar (det är BookingInfo's ansvar),
 // jag vill bara testa att Booking-komponenten tar emot datan när man skriver.
 // Så jag gör enkla inputs som triggar "updateBookingDetails" direkt.
 vi.mock('../components/BookingInfo/BookingInfo', () => ({
@@ -100,20 +100,20 @@ describe('Booking Component', () => {
   };
 
   it('should allow user to book date, time, players and lanes, adding shoes and submit', async () => {
-    // 1. Happy path! Vi testar att allt funkar som det ska.
+    // Vi testar att allt funkar som det ska.
     renderBooking();
     fillForm('2', '1'); // 2 pers, 1 bana
     addShoes(2); // Lägger till 2 skor
 
-    // Letar upp sko-inputarna
+    // Letar upp sko inputarna
     const shoeInput0 = screen.getByTestId('shoe-input-0');
     const shoeInput1 = screen.getByTestId('shoe-input-1');
 
-    // Fyller i skostorlekar (viktigt, annars får vi felmeddelande)
+    // Fyller i skostorlekar viktigt, annars får vi felmeddelande
     fireEvent.change(shoeInput0, { target: { value: '42', name: shoeInput0.name } });
     fireEvent.change(shoeInput1, { target: { value: '43', name: shoeInput1.name } });
 
-    // Trycker på STRIKE (boka-knappen)
+    // Trycker på STRIKE boka-knappen
     const bookBtn = screen.getByText('strIIIIIike!');
     fireEvent.click(bookBtn);
 
@@ -147,8 +147,8 @@ describe('Booking Component', () => {
   });
 
 
-  it('VG: should show error if fields are missing', async () => {
-    // 3. Felhantering (VG-nivå). Försöker boka helt tomt formulär.
+  it(' should show error if fields are missing', async () => {
+    // 3. Felhantering  Försöker boka helt tomt formulär.
     renderBooking();
     fireEvent.click(screen.getByText('strIIIIIike!'));
 
@@ -161,8 +161,8 @@ describe('Booking Component', () => {
   });
 
 
-  it('VG: should show error if too many players for the lanes', async () => {
-    // 4. Testar regeln: Max 4 pers per bana.
+  it(' should show error if too many players for the lanes', async () => {
+  // Max 4 pers per bana.
     renderBooking();
     fillForm('5', '1'); // 5 pers på 1 bana = FAIL
     
@@ -182,7 +182,7 @@ describe('Booking Component', () => {
     });
   });
 
-  it('VG: should show error if shoes count does not match people count', async () => {
+  it(' should show error if shoes count does not match people count', async () => {
     // 5. Testar regeln: Antal skor måste matcha antal spelare.
     renderBooking();
     fillForm('2', '1'); // 2 spelare
@@ -196,12 +196,12 @@ describe('Booking Component', () => {
     });
   });
 
-  it('VG: should show error if shoe sizes are not filled', async () => {
+  it('should show error if shoe sizes are not filled', async () => {
     // 6. Testar regeln: Man får inte glömma fylla i storlekarna.
     renderBooking();
     fillForm('1', '1');
     addShoes(1);
-    // ... men jag struntar i att fylla i storleken i inputen (value är tomt).
+    // ... men jag struntar i att fylla i storleken i inputen (value är tomt
 
     fireEvent.click(screen.getByText('strIIIIIike!'));
 
